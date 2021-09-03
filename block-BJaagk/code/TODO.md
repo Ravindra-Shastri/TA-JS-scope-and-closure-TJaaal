@@ -26,10 +26,7 @@ function percentage(marks, total) {
   return (marks * 100) / total;
 }
 // Your answer
-
-let getPercentage = function(marks, total) {
-  return (marks * 100) / total;
-}
+Function Declaration
 ```
 
 ```js
@@ -37,14 +34,7 @@ let percentage = function percentage(marks, total) {
   return (marks * 100) / total;
 };
 
-let percentage = function(marks, total) {
-  return (marks * 100) / total;
-},
-// or
-let percentage =(marks, total) => {
-  return (marks * 100) / total;
-}
-
+Function Expression
 
 ```
 
@@ -53,9 +43,7 @@ let percentage = function (marks, total) {
   return (marks * 100) / total;
 };
 
-let percentage = (marks, total) => {
-  return (marks * 100) / total;
-}
+Function Expression
 ```
 
 ```js
@@ -63,12 +51,12 @@ let percentage = (marks, total) => {
   return (marks * 100) / total;
 };
 
-let percentage = (marks, total) => (marks * 100) / total;
-
+Function Expression
 ```
 
 ```js
 let percentage = (marks, total) => (marks * 100) / total;
+Function Expression
 ```
 
 3. Why is a function definition an expression in JavaScript? Give one example of function expression.
@@ -77,7 +65,7 @@ Because functions are value and they can be assigned,copied and decleared in any
 
 let add = function(a,b){
   return a+b;
-}
+};
 
 4. Why is a function call an expression in JavaScript?
  
@@ -91,11 +79,11 @@ function add(a, b) {
 }
 
 let five = add(2, 3); // Answer VALID ,Because calling the function and passing arguments.
-five = add; // Answer  INVALID ,Because five is not a variable and add is not a function call.
-five = five(10, 11); // Answer, Because five is not a variable and not a function also.
+five = add; // Answer  VALID ,Because five is assigning a function.
+five = five(10, 11); // VALID, Because five is passing an argument in function five.
 five = function () {
   return 'Hello';
-}; // Answer  , Because five is not a variable .
+}; // Answer  ,VALID Because function is an Object.
 ```
 
 6. What is the difference between function definition and function call? Explain with an example.
@@ -117,7 +105,7 @@ function hello() {
   console.log('Hello World!');
 }
 
-hello.user = 'Sam'; // valid or invalid // INVALID Because no accepting any parameter and assigning a value.
+hello.user = 'Sam'; // valid or invalid // VALID Because function is an Object.
 ```
 
 9. What is higher order function explain with an example.
