@@ -50,7 +50,7 @@ var userMsg = sayHello(user);
 
 <!-- Put your image here -->
 
-![](./img/image-name.jpg)
+![](./img/img1.jpg)
 
 
 
@@ -68,7 +68,7 @@ var percentageProfit = getPercentage(400, 200);
 
 <!-- Put your image here -->
 
-![](./img/image-name.jpg)
+![](./img/img2.jpg)
 
 
 
@@ -89,4 +89,4 @@ var whoAmIAgain = customeMessage(12);
 
 <!-- Put your image here -->
 
-![](./img/image-name.jpg)
+![](./img/img3.jpg)
