@@ -1,6 +1,14 @@
 1. Create a function by your choice that accepts a callback function.
 
+     function addNumberBy5(num,cb){
+       return number
+     }
+
 2. Create a function by you choice that returns a function reference.
+
+function addNumberBy5(num){
+       return cb
+     }
 
 3. Create a higher order function called `map` that takes two inputs:
    - An array of numbers/string/boolean etc
@@ -20,7 +28,7 @@ multiplyByTwo(1); //-> 2
 multiplyByTwo(2); //-> 4
 ```
 
-4. Create a higher-order function called `forEach` taht takes an array and a callback, and runs the callback on each element of the array. `forEach` does not return anything.
+4. Create a higher-order function called `forEach` that takes an array and a callback, and runs the callback on each element of the array. `forEach` does not return anything.
 
 ```js
 // Your code goes here
