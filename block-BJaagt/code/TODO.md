@@ -6,7 +6,7 @@ Example:
 function hello() {
   var username = 'Arya';
 }
-console.log(useranme); // output
+console.log(useranme); // output Arya
 ```
 
 In above code we are looking for the variable named `usename`. There is no variable named `username` in the global scope. The variable is inside the function named `hello` and we can't access the variable defined inside a function from outside.
@@ -19,7 +19,7 @@ The above code will throw an error `Reference Error username is not defined`.
 {
   const username = 'Arya';
 }
-console.log(useranme); // output
+console.log(useranme); // output Arya
 ```
 
 3. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
