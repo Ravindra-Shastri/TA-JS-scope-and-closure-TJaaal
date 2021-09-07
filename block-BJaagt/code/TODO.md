@@ -86,5 +86,5 @@ console.log(i, 'Second'); // output 'Second' 1 time
 for (let i = 0; i < 10; i++) {
   console.log(i, 'First'); // output 'First' 9 times
 }
-console.log(i, 'Second'); // output 'Second' 1 time
+console.log(i, 'Second'); // output Error: i is not defined.
 ```
