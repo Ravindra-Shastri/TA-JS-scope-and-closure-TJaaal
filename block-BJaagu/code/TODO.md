@@ -9,7 +9,7 @@ var numA = 21,
 Find the output of the code snippets below:
 
 ```js
-console.log(numA + numB); //OUTPUT SyntaxError: Identifier 'numA' has already been declared
+console.log(numA + numB); //OUTPUT 51
 let numA = 21,
   numB = 30;
 ```
@@ -19,7 +19,7 @@ Find the output of the code snippets below:
 ```js
 let numA = 21,
   numB = 30;
-console.log(numA + numB); //OUTPUT SyntaxError: Identifier 'numA' has already been declared
+console.log(numA + numB); //OUTPUT 51
 ```
 
 Find the output of the code snippets below:
@@ -38,7 +38,7 @@ Find the output of the code snippets below:
 
 ```js
 let username = "Tyrion";
-sayHello(); // OUTPUT  SyntaxError: Identifier 'username' has already been declared
+sayHello(); // OUTPUT Tyrion
 function sayHello() {
   console.log(username);
 }
@@ -113,7 +113,7 @@ let sayHello = () => {
   var username = "John";
   console.log(username);
 };
-sayHello(); // OUTPUT SyntaxError: Identifier 'sayHello' has already been declared.
+sayHello(); // OUTPUT John
 ```
 
 Find the output of the code snippets below:
