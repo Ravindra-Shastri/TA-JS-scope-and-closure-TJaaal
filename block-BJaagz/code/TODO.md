@@ -11,7 +11,7 @@ forEach(['Sam', 'Jon', 'Arya'], (name, i, arr) =>
   console.log(name + name, i, arr)
 );
 ```
-
+hbjkkllhb
 2. Implement `map` array method using Array.reduce
 
 - `map` accepts two parameter array and callback
@@ -22,7 +22,7 @@ forEach(['Sam', 'Jon', 'Arya'], (name, i, arr) =>
 function map() {
   // Your code goes here
 }
-
+hhioklp
 map(['Sam', 'Jon', 'Arya'], (name) => name + name); // ['SamSam', 'JonJon', 'AryaArya']
 ```
 
