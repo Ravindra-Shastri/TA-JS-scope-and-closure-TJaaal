@@ -30,6 +30,7 @@ Have `map` return a new array filled with values that are the result of the 'cal
 
 ```js
 function map(arr,cb){
+  let final = []
   for(let elm of arr){
     final.push(cb(elm));
   }
