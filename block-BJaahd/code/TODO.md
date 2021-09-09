@@ -1,4 +1,4 @@
-Create the execution context diagram for following code. What will be the output in each line of code
+1.Create the execution context diagram for following code. What will be the output in each line of code
 
 ```js
 function getCounter() {
@@ -28,6 +28,8 @@ counter.value(); // output 2
 counter.decrement(); // output undefined
 counter.value(); // output 1
 ```
+
+![](./img/img1.jpg)
 
 2. Create the execution context diagram and write the output.
 
@@ -65,3 +67,4 @@ counter1.decrement();
 console.log(counter1.value()); // OUTPUT 1
 console.log(counter2.value()); // OUTPUT 0
 ```
+![](./img/img2.jpg)
