@@ -137,10 +137,10 @@ console.log(
 function schedule(callbacks,allTimes){
   if(callbacks.length !== allTimes.length){
     alert('Length is not same')
-    return acc;
+    return;
   }
   callbacks.forEach((fn,i) =>{
-    setTimeout((fn,allTimes[i] * 1000))
+    setTimeout(fn,allTimes[i] * 1000)
   });
 };
 
