@@ -152,9 +152,7 @@ var nextMessage = undefined;
 // Execution Phase
 
 username = 'Arya';
-
 console.log(username, numbers);
-
 number = 21;
 message = sayHello(username);
 
