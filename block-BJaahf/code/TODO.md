@@ -10,9 +10,22 @@
 **You can use normal for loop for this function**
 
 ```js
-function loop() {
-  // Your code goes here
+
+
+function loop(startvalue){
+
+function test(currentvalue){
+
 }
+function update(currentvalue){
+
+}
+function body(currentvalue){
+
+}
+
+}
+
 
 loop(
   3,
@@ -43,7 +56,9 @@ reduce(nums, add, 0); //-> 8
 3. Construct a function intersection that compares input arrays and returns a new array with elements found in all of the inputs.
 
 ```js
-function intersection(arrays) {}
+function intersection(arrays) {
+  return arr[index] 
+}
 
 // Test
 console.log(
