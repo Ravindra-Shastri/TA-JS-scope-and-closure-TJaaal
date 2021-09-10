@@ -87,7 +87,7 @@ function getCard(suit) {
     function getRandomNumber(){
       return Math.floor(Math.random() * values.length);
     }
-    return `Card is: ${values[getRandomNumber()] ${suit}}`
+    return `Card is: ${values[getRandomNumber()]} ${suit}`;
   }
 }
 
