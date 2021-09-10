@@ -15,7 +15,7 @@ console.log(
   window.knownAs
 );
 ```
-
+gkjlklghjjjk
 2. Guess the output:
 
 ```js
@@ -29,7 +29,7 @@ function fullName(a, b) {
 
 console.log(window.fullName(firstName, lastName));
 ```
-
+hgbvnkl
 3. Make a Execution Context Diagram for the following JS and write the output.
 
 ```js
