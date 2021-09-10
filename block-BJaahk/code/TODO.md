@@ -5,8 +5,10 @@
 The returned function accepts a sentence. If the sentence contains the `fromWord` it should be replaced with `toWord`. Finally when the returned function is called it should return the new sentence.
 
 ```js
-function censor(fromWord, toWord) {
-  return censorSentance
+function censor(fromWord, toWord){
+  return function(sentence){
+    return sentence.replace(formword,toword);
+  }
 }
 
 let censorSentence = censor('World', 'Sam');
@@ -25,7 +27,20 @@ The returned function either accepts two parameter or one parameter.
 
 ```js
 function multipleCensor() {
-  //  Your code goes here
+  let words = [];
+  return function(...params){
+if(params.length === 1){
+let quote = params[0];
+words.forEach(pair =>{
+  quote = quote.replace(pair[0],pair[1])
+});
+return quote;
+}else if(params.length === 2){
+words.push(params);
+}else{
+  alert('The number of parameters are invalid')
+}
+  }
 }
 
 let censorQuote = multipleCensor();
@@ -49,8 +64,16 @@ The returned function accepts one parameter.
 - If the parameter is the same as the password it will return the object in which we stored the values.
 
 ```js
-function createCache() {
-  // Your code goes here
+function createCache(cb,pwd){
+  let obj = {};
+  return function(param){
+    if(param !== pwd){
+    obj[param] = cb(param);
+    return cb(param);
+  }else{
+    return obj;
+  }
+}
 }
 
 function add10(num) {
@@ -69,9 +92,22 @@ addCache('foo'); // {12: 22, 100: 110, 1: 11}
 4. Change the above function in such a way that when the returned function is called with any other value than password. It should first check the object where we are storing the argument and return value. If the key is present return the value form the object itself. Otherwise call the callback function with the parameter.
 
 ```js
-function createCache() {
-  // Your code goes here
+  function createCache(cb,pwd){
+  let obj = {};
+  return function(param){
+    if(param !== pwd){
+      if(obj[param]){
+        return obj[param];
+      }else{
+       obj[param] = cb(param);
+       return cb(param);
+      } 
+  }else{
+    return obj;
+  }
 }
+}
+
 
 function add10(num) {
   return num + 10;
