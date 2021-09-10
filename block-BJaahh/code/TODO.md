@@ -3,9 +3,9 @@
 1. Write a function called `multiplyBy` that takes a `number` as an argument and returns a function. Returned function takes another `number` as an argument and returns the multiplication of both the numbers.
 
 ```js
-function multiplyBy(number){
-  return function(num){
-    return number * num;
+function multiplyBy(number1){
+  return function(number2){
+    return number1 * number2;
   }
 }
 
@@ -18,7 +18,7 @@ const final = double(15); // final should be 30
 ```js
 function fullName(firstName){
   return function(lastName){
-    return fullName;
+    return `${firstName} ${lastName}`;
   }
 }
 
@@ -30,7 +30,12 @@ const final = name('Smith'); // final should be "Will Smith"
 
 ```js
 function isInBetween(a, b) {
-  return function(){  
+  return function(c){  
+    if(a > b){
+      return c > b && c < a;
+    }else{
+      return c < b && c > a;
+    }
   }
 }
 
@@ -44,8 +49,8 @@ isChild(103); // false
 
 ```js
 function letsWishThem(greeting) {
-  return function(){  
-    console.log(message)
+  return function(message){  
+    return `${greeting} ${message}`;
   }
 }
 
@@ -58,9 +63,9 @@ callWithHello('How Are You?'); // Hello How Are You?
 5. Write a function called `addGame` which takes a string (name of the game) and the current score. It returns a function calling that will increment the score by one and print something like `Score of Basketball is 1`.
 
 ```js
-function addGame(gameName) {
+function addGame(gameName,currentScore) {
   return function(){
-    console.log(Score of Basketball is 1);
+    return `Score of ${gameName} is ${++currentScore}`
   }
 }
 
@@ -76,8 +81,14 @@ cricket(); // Your score of Cricket is 2
 6. Write a function called `getCard` which takes one of these options (club, spade, heart, diamond) returns a function calling that function returns random card (2,3,4,5,6,7,8,9,10,J, Q, K, A) of that suit.
 
 ```js
-function getCard(club, spade, heart, diamond) {
-  return 
+function getCard(suit) {
+  return function(){
+    let values = [2,3,4,5,6,7,8,9,10,"J","Q","K","A"];
+    function getRandomNumber(){
+      return Math.floor(Math.random() * values.length);
+    }
+    return `Card is: ${values[getRandomNumber()] ${suit}}`
+  }
 }
 
 // Output
